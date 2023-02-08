@@ -1,0 +1,70 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-beginning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header,footer{
+           
+            height: 80px;
+            width: 100%;
+            background-color: darkcyan;
+            padding: 20px 120px;
+        }
+        #s{
+            text-align: center;
+            height: 400px;
+            width: 100%;
+            padding: 60px 120px;
+           background-color: wheat;
+           
+        }
+        #s1{
+            padding: 10px;
+        }
+        #btn{
+          height: 40px;
+          width: 20%;
+        }
+       
+    </style>
+ </head>
+ <body>
+
+    <!-- header -->
+    <header>
+        <h4>Hi Header</h4>
+    </header>
+
+    <!-- content -->
+    <section id="s">
+        <h1>Hi Javascript</h1>
+
+        <p id="s1"> 
+             <button type="button" value="red" id="btn" onclick="changeColor(this.value)" >Click for Red</button>
+             <button type="button" value="green" id="btn" onclick="changeColor(this.value)" >Click for Green</button>
+         </p>
+
+    </section>
+ 
+    <script>
+        function changeColor(colorName) {
+            document.getElementById("s").style.color = colorName;
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <h4>Hi Footer</h4>
+    </footer>
+
+ </body>
+ </html>
